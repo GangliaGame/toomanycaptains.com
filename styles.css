@@ -16,18 +16,21 @@ body {
 }
 
 .players {
+  height: 80vh;
+}
+
+.players, .logo {
   width: 80%;
-  height: 100vh;
   background-color: green;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
 
 .logo {
   font-size: 42px;
-  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
+  position: sticky;
+  top: -1px;
 }
 
 .content {
