@@ -7,6 +7,7 @@ body {
 
 .background {
   background-color: purple;
+  background-image: url("./resources/background.svg");
   width: 100%;
   /* height: 1000px; */
   display: flex;
@@ -17,12 +18,17 @@ body {
 
 .players {
   height: 80vh;
+
+}
+.players > img {
+  width: 100%;
+  height: auto;
 }
 
-.players, .logo {
+/* .players, .logo {
   width: 80%;
   background-color: green;
-}
+} */
 
 .logo {
   font-size: 42px;
