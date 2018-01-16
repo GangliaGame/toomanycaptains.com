@@ -1,5 +1,5 @@
 body {
-  background-color: purple;
+  background-color: black;
   margin: 0;
   color: white;
   font-family: sans-serif;
@@ -17,12 +17,19 @@ body {
 }
 
 .players {
-  height: 80vh;
-
+  height: calc(780/1920*100vw);
 }
+
 .players > img {
   width: 100%;
-  height: auto;
+  height: atuo;
+}
+
+.table {
+  position: absolute;
+  top: calc(780/1920*100vw*0.999);
+  width: 100%;
+  height: atuo;
 }
 
 /* .players, .logo {
@@ -31,21 +38,30 @@ body {
 } */
 
 .logo {
+  width: calc(1400/1920*100vw);
   font-size: 42px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: calc(80/1920*100vw);
+  padding-bottom: calc(110/1920*100vw);
   text-align: center;
   position: sticky;
-  top: -1px;
 }
 
+/* }
+.logo > img {
+  width: 100%;
+  height: auto;
+} */
+
+
 .content {
+  position: absolute;
+  top: calc(1180/1920*100vw*0.999);
   background-color: black;
   height: 1000px;
   padding-top: 24x;
   width: 70%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .content h1 {
