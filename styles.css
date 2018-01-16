@@ -38,6 +38,7 @@ body {
 } */
 
 .logo {
+  z-index: 1;
   width: calc(1400/1920*100vw);
   font-size: 42px;
   padding-top: calc(80/1920*100vw);
