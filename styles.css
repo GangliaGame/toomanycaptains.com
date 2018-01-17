@@ -27,7 +27,7 @@ body {
 
 .table {
   position: absolute;
-  top: calc(780/1920*100vw*0.999);
+  top: calc(580/1920*100vw*0.999);
   width: 100%;
   height: atuo;
 }
