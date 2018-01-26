@@ -31,10 +31,10 @@ body {
   padding-bottom: 25px;
 }
 
-.logo-cover {
+.batman {
   width: 70%;
   height: 170px;
-  margin-top: -170px;
+  margin-top: -171px;
   background-color: black;
   position: sticky;
   position: -webkit-sticky;
@@ -51,6 +51,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  will-change: transform;
 }
 
 .content {
@@ -74,40 +75,29 @@ body {
   line-height: 1.5em;
 }
 
-/*
-.players
-.logo
-.hand-left
-.hand-right */
+.hand {
+  position: fixed;
+  overflow: hidden;
+  width: calc(370/1920*100vw);
+  height: auto;
+  bottom: 0;
+  z-index: 100;
+  will-change: transform;
+  transition: 0.5s;
+}
 
 .hand-left {
-    position: fixed;
-    overflow: hidden;
-    left: calc(-370/1920*100vw);
-    bottom: 0;
-    width: calc(370/1920*100vw);
-    height: auto;
-    z-index: 5;
-    transition: 0.5s;
+  left: calc(-370/1920*100vw);
 }
 
 .slide-left {
-  transition: 0.5s;
   left: 0;
 }
 
 .hand-right {
-    position: fixed;
-    overflow: hidden;
-    right: calc(-370/1920*100vw);
-    bottom: 0;
-    width: calc(370/1920*100vw);
-    height: auto;
-    z-index: 5;
-    transition: 0.5s;
+  right: calc(-370/1920*100vw);
 }
 
 .slide-right {
-  transition: 0.5s;
   right: 0;
 }
