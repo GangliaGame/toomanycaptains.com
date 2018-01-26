@@ -70,7 +70,6 @@ body {
   font-size: 18px;
   line-height: 1.5em;
 }
-<<<<<<< HEAD
 
 /*
 .players
@@ -85,6 +84,7 @@ body {
     bottom: 0;
     width: calc(370/1920*100vw);
     height: auto;
+    z-index: 5;
     transition: 0.5s;
 }
 
@@ -100,6 +100,7 @@ body {
     bottom: 0;
     width: calc(370/1920*100vw);
     height: auto;
+    z-index: 5;
     transition: 0.5s;
 }
 
@@ -107,5 +108,3 @@ body {
   transition: 0.5s;
   right: 0;
 }
-=======
->>>>>>> c6fe922296c199ac5aed466ac0a9bca93fc15bc6
