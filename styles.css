@@ -80,3 +80,33 @@ body {
 .logo
 .hand-left
 .hand-right */
+
+.hand-left {
+    position: fixed;
+    overflow: hidden;
+    left: calc(-370/1920*100vw);
+    bottom: 0;
+    width: calc(370/1920*100vw);
+    height: auto;
+    transition: 0.5s;
+}
+
+.slide-left {
+  transition: 0.5s;
+  left: 0;
+}
+
+.hand-right {
+    position: fixed;
+    overflow: hidden;
+    right: calc(-370/1920*100vw);
+    bottom: 0;
+    width: calc(370/1920*100vw);
+    height: auto;
+    transition: 0.5s;
+}
+
+.slide-right {
+  transition: 0.5s;
+  right: 0;
+}
