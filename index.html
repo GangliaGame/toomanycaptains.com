@@ -5,8 +5,6 @@
     <title>Too Many Captains</title>
     <link rel="shortcut icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <link href="./styles.css" rel="stylesheet">
   </head>
   <body>
@@ -56,6 +54,11 @@
             document.querySelector(".hand-right").classList.remove("slide-right");
           }
         };
+    </script>
+    <script>
+      const elements = document.querySelectorAll('.logo-cover, .logo-container, .content');
+      Stickyfill.add(elements);
+      console.log(elements)
     </script>
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"0299ff5a811972e5b0cf1ada0","lid":"33b17b4cdf"}) })</script>
   </body>

@@ -37,6 +37,7 @@ body {
   margin-top: -170px;
   background-color: black;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 2;
 }
@@ -44,6 +45,7 @@ body {
 .logo-container {
   width: 100%;
   position: sticky;
+  position: -webkit-sticky;
   top: 220px;
   z-index: 4;
   display: flex;
@@ -53,12 +55,13 @@ body {
 
 .content {
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 1;
   background-color: black;
-  width: 70%;
-  padding-left: 15%;
-  padding-right: 15%;
+  width: 55%;
+  padding-left: 27.5%;
+  padding-right: 27.5%;
 }
 
 .content h1 {
