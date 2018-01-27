@@ -6,7 +6,7 @@ body {
 }
 
 .background {
-  background-image: url("./resources/background.svg");
+  background-image: url("./resources/background-resize.svg");
   width: 100%;
   display: flex;
   align-items: center;
@@ -16,20 +16,23 @@ body {
 
 .players {
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .players > img {
-  width: 100%;
+  width: 80%;
 }
 
 .table {
-  margin-top: -5px;
+  /* margin-top: -5px; */
   width: 100%;
   z-index: 3;
 }
 
 .batman {
-  width: 70vw;
+  width: 60vw;
   height: 15vh;
   margin-top: -15.1vh;
   background-color: black;
@@ -40,9 +43,9 @@ body {
 }
 
 .logo {
-  width: 70vw;
-  height: 20vh;
-  margin-top: -30vmin;
+  width: 60vw;
+  height: 15vh;
+  margin-top: -25vmin;
   /* padding-top: 5vh; */
   /* padding-bottom: 5vh; */
 }
@@ -120,18 +123,28 @@ h1::before {
     width: 85vw;
   }
   .content {
-    margin-top: 10px;
-    /* background-color: red; */
+    margin-top: 20px;
+  }
+  .logo {
+    margin-top: -20vmin;
   }
   .batman {
-    margin-top: -13.1vh;
-    height: 13vh;
+    margin-top: -15.1vh;
+    height: 15vh;
   }
 }
 
 @media (max-width: 550px) {
   .batman {
-    margin-top: -20vh;
+    margin-top: -46.9vh;
+    height: 15.1vh;
+  }
+  .logo {
+    width: 65vw;
+    margin-bottom: 40.9vmin;
+  }
+  .logo-container {
+    top: 10vmin;
   }
 }
 
@@ -141,9 +154,23 @@ h1::before {
 
 @media (max-height: 650px) {
   .logo {
-    margin-top: -24vmin;
+    width: 70vw;
+    height: 25vh;
   }
+  .logo {
+    margin-top: -25vmin;
+  }
+}
+
+@media (min-width: 900px) {
   .batman {
-    padding-bottom: 5vmin;
+    margin-top: -20.1vh;
+    height: 20vh;
+  }
+  .logo {
+    margin-top: -30vmin;
+  }
+  .logo-container {
+    top: 20vmin;
   }
 }
