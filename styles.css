@@ -6,12 +6,22 @@ body {
 }
 
 .background {
-  background-image: url('./resources/background.svg');
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.background::before {
+  will-change: transform;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('./resources/background.svg');
+  content: '';
+  position: fixed;
+   z-index: -1;
 }
 
 .players {
@@ -72,6 +82,7 @@ body {
   margin-top: -1px;
   width: 60vw;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .content h1 {
@@ -101,15 +112,24 @@ h1::before {
   width: 20vw;
   height: 40vh;
   bottom: 0;
-  z-index: 100;
+  z-index: 15;
+}
+
+.footer {
+  height: 120px;
+  width: 100%;
+  background-color: #222;
+  z-index: 20;
 }
 
 .hand-left {
-  left: -25vw;
+  left: -20vw;
+  margin-left: -2.5vw;
 }
 
 .hand-right {
   right: -25vw;
+  margin-right: -2.5vw;
 }
 
 /* Here be dragons */

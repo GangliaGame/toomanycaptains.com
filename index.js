@@ -34,6 +34,3 @@ const lexLuther = new ScrollMagic.Scene({
 })
 .setClassToggle('.batman', 'batman-fullwidth')
 .addTo(controller);
-
-
-
