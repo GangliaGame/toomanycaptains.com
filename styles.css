@@ -42,9 +42,9 @@ body {
 .logo {
   width: 70vw;
   height: 20vh;
-  margin-top: -25vmin;
-  padding-top: 2vmin;
-  padding-bottom: 2vmin;
+  margin-top: -30vmin;
+  /* padding-top: 5vh; */
+  /* padding-bottom: 5vh; */
 }
 
 .logo-container {
@@ -86,17 +86,17 @@ body {
 .hand {
   position: fixed;
   overflow: hidden;
-  width: calc(370/1920*100vw);
-  height: auto;
+  width: 20vw;
+  height: 40vh;
   bottom: 0;
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
   z-index: 100;
 }
 
 .hand-left {
-  left: calc(-370/1920*100vw);
+  left: -25vw;
 }
 
 .hand-right {
-  right: calc(-370/1920*100vw);
+  right: -25vw;
 }
