@@ -133,33 +133,38 @@ h1::before {
     height: 15vh;
   }
 }
+.batman-fullwidth {
+  width: 100%;
+}
 
 @media (max-width: 550px) {
   .batman {
     display: none;
   }
   .logo {
-    width: 65vw;
-    margin-bottom: -10.9vmin;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    margin-top: -40vw;
+  }
+  .content {
+    margin-top: -25px;
   }
   .logo-container {
-    transform: translate3d(0px, 0px, 0px) scale(1, 1) !important;
+    margin: 0;
+    padding: 0;
     position: relative;
-    top: 10vmin;
+    transform: translate3d(0px, 0px, 0px) scale(1, 1) !important;
   }
-}
-
-.batman-fullwidth {
-  width: 100%;
-}
-
-@media (max-height: 650px) {
-  .logo {
-    width: 70vw;
-    height: 25vh;
+  .content p {
+    font-size: 16px;
   }
-  .logo {
-    margin-top: -25vmin;
+  .content h1 {
+    font-size: 24px;
+  }
+  h1::before {
+    width: 35px;
+    height: 35px;
   }
 }
 
