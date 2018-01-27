@@ -150,11 +150,11 @@ h1::before {
     margin-top: 20px;
   }
   .logo {
-    margin-top: -20vmin;
+    margin-top: -22vmin;
   }
   .batman {
-    margin-top: -15.1vh;
-    height: 15vh;
+    margin-top: -13.1vh;
+    height: 13vh;
   }
 }
 .batman-fullwidth {
@@ -164,6 +164,9 @@ h1::before {
 @media (max-width: 600px) {
   .batman {
     display: none;
+  }
+  .table {
+    margin-bottom: -1px;
   }
   .logo {
     margin: 0;
