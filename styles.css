@@ -71,7 +71,7 @@ body {
   top: 0;
   z-index: 1;
   margin-top: -1px;
-  width: 45vw;
+  width: 60vw;
   padding-top: 40px;
 }
 
@@ -112,6 +112,8 @@ h1::before {
 .hand-right {
   right: -25vw;
 }
+
+/* Here be dragons */
 
 @media (max-width: 900px) and (max-height: 900px) {
   .hand {
@@ -166,7 +168,7 @@ h1::before {
     height: 20vh;
   }
   .logo {
-    margin-top: -30vmin;
+    margin-top: -25vmin;
   }
   .logo-container {
     top: 20vmin;
