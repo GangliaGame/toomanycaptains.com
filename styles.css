@@ -83,6 +83,7 @@ body {
   width: 60vw;
   padding-top: 40px;
   padding-bottom: 40px;
+  font-weight: 300;
 }
 
 .content h1 {
@@ -91,6 +92,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+strong {
+  font-weight: 700;
 }
 
 h1::before {
@@ -102,7 +107,7 @@ h1::before {
 }
 
 .content p {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.5em;
 }
 
@@ -164,7 +169,7 @@ h1::before {
     margin: 0;
     padding: 0;
     height: auto;
-    margin-top: -40vw;
+    margin-top: -47vmin;
   }
   .content {
     margin-top: -25px;
