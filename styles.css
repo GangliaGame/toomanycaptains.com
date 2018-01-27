@@ -204,3 +204,47 @@ h1::before {
     top: 20vmin;
   }
 }
+
+#mc_embed_signup {
+  margin-top: 40px;
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 24px;
+}
+
+.mc-field-group > input {
+  height: 38px;
+  width: 220px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.mc-field-group > input, .mc-field-group > input::placeholder {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 24px;
+  text-indent: 5px;
+}
+
+#mc-embedded-subscribe {
+  width: 140px;
+  color: white;
+  border: 3px solid white;
+  height: 40px;
+  background-color: black;
+  border-radius: 5px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+#mc-embedded-subscribe:hover {
+  cursor: pointer;
+  height: 40px;
+  color: white;
+  background-color: rgb(38, 161,	208);
+}
