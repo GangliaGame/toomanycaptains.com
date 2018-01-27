@@ -7,10 +7,12 @@ const rightHandTween = TweenMax.to('.hand-right', 1, {right: 0});
 handsTimeline.add([leftHandTween,rightHandTween]);
 const handsScene = new ScrollMagic.Scene({
   triggerHook: 0,
-  duration: 750,
+  duration: 600,
+  offset: 100,
   reverse: true,
   triggerElement: '.table',
 })
+.addIndicators()
 .setTween(handsTimeline)
 .addTo(controller);
 
