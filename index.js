@@ -1,24 +1,20 @@
 const controller = new ScrollMagic.Controller();
 
+// Slide hands in when scrolling
 const handsTimeline = new TimelineMax();
-const leftHandTween = TweenMax.to(".hand-left", 1, {left: 0});
-const rightHandTween = TweenMax.to(".hand-right", 1, {right: 0});
+const leftHandTween = TweenMax.to('.hand-left', 1, {left: 0});
+const rightHandTween = TweenMax.to('.hand-right', 1, {right: 0});
 handsTimeline.add([leftHandTween,rightHandTween]);
-
 const handsScene = new ScrollMagic.Scene({
   triggerHook: 0,
   duration: 750,
   reverse: true,
   triggerElement: '.table',
 })
-// .addIndicators()
 .setTween(handsTimeline)
 .addTo(controller);
 
-const logoTimeline = new TimelineMax();
-const logoShrinkTween = TweenMax.to(".logo-container", 1, {scale: 0.7});
-logoTimeline.add([logoShrinkTween]);
-
+// Scale the logo down when sticky
 const logoTweenScene = new ScrollMagic.Scene({
   triggerHook: 0,
   duration: 150,
@@ -26,17 +22,16 @@ const logoTweenScene = new ScrollMagic.Scene({
   reverse: true,
   triggerElement: '.table',
 })
-// .addIndicators()
-.setTween(logoTimeline)
+.setTween('.logo-container', 1, {scale: 0.7})
 .addTo(controller);
 
-const lol = new ScrollMagic.Scene({
+// Flatten batman out for mobile devices
+const lexLuther = new ScrollMagic.Scene({
   triggerHook: 0,
   offset: -20,
   reverse: true,
   triggerElement: '.content',
 })
-// .addIndicators()
 .setClassToggle('.batman', 'batman-fullwidth')
 .addTo(controller);
 
