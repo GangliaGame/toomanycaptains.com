@@ -16,7 +16,7 @@ const handsScene = new ScrollMagic.Scene({
 .addTo(controller);
 
 const logoTimeline = new TimelineMax();
-const logoShrinkTween = TweenMax.to(".logo-container", 1, {scale: 0.63});
+const logoShrinkTween = TweenMax.to(".logo-container", 1, {scale: 0.7});
 logoTimeline.add([logoShrinkTween]);
 
 const logoTweenScene = new ScrollMagic.Scene({
