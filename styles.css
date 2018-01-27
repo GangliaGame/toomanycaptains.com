@@ -43,7 +43,7 @@ body {
 }
 
 .logo {
-  width: 60vw;
+  width: 65vw;
   height: 15vh;
   margin-top: -25vmin;
 }
@@ -136,14 +136,15 @@ h1::before {
 
 @media (max-width: 550px) {
   .batman {
-    margin-top: -46.9vh;
-    height: 15.1vh;
+    display: none;
   }
   .logo {
     width: 65vw;
-    margin-bottom: 40.9vmin;
+    margin-bottom: -10.9vmin;
   }
   .logo-container {
+    transform: translate3d(0px, 0px, 0px) scale(1, 1) !important;
+    position: relative;
     top: 10vmin;
   }
 }
