@@ -32,7 +32,7 @@ body {
 }
 
 .players > img {
-  width: 80%;
+  width: 80vw;
 }
 
 .table {
@@ -198,6 +198,17 @@ h1::before {
     height: 20vh;
   }
   .logo {
+    margin-top: -25vmin;
+  }
+  .logo-container {
+    top: 20vmin;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    width: 75vw;
+    height: 15vh;
     margin-top: -25vmin;
   }
   .logo-container {
