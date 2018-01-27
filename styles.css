@@ -71,6 +71,7 @@ body {
   z-index: 1;
   margin-top: -1px;
   width: 45vw;
+  padding-top: 40px;
 }
 
 .content h1 {
@@ -89,7 +90,6 @@ body {
   width: 20vw;
   height: 40vh;
   bottom: 0;
-  /* margin-bottom: -10px; */
   z-index: 100;
 }
 
@@ -99,4 +99,40 @@ body {
 
 .hand-right {
   right: -25vw;
+}
+
+@media (max-width: 900px) and (max-height: 900px) {
+  .hand {
+    display: none;
+  }
+  .content {
+    width: 85vw;
+  }
+  .content {
+    margin-top: 10px;
+    /* background-color: red; */
+  }
+  .batman {
+    margin-top: -13.1vh;
+    height: 13vh;
+  }
+}
+
+@media (max-width: 550px) {
+  .batman {
+    margin-top: -20vh;
+  }
+}
+
+.batman-fullwidth {
+  width: 100%;
+}
+
+@media (max-height: 650px) {
+  .logo {
+    margin-top: -24vmin;
+  }
+  .batman {
+    padding-bottom: 5vmin;
+  }
 }

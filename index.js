@@ -29,3 +29,16 @@ const logoTweenScene = new ScrollMagic.Scene({
 // .addIndicators()
 .setTween(logoTimeline)
 .addTo(controller);
+
+const lol = new ScrollMagic.Scene({
+  triggerHook: 0,
+  offset: -20,
+  reverse: true,
+  triggerElement: '.content',
+})
+// .addIndicators()
+.setClassToggle('.batman', 'batman-fullwidth')
+.addTo(controller);
+
+
+
