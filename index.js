@@ -12,7 +12,6 @@ const handsScene = new ScrollMagic.Scene({
   reverse: true,
   triggerElement: '.table',
 })
-.addIndicators()
 .setTween(handsTimeline)
 .addTo(controller);
 
