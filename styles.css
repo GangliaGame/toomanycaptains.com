@@ -134,6 +134,9 @@ h1::before {
   width: 100%;
   background-color: #222;
   z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hand-left {
@@ -205,6 +208,11 @@ h1::before {
 .viewing-screen img {
   width: 100%;
   border: 2px solid white;
+}
+
+.press h2 {
+  display: inline-block;
+  margin-right: 25px;
 }
 
 /* Mailchimp newsletter signup */
