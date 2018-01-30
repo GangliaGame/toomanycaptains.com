@@ -1,5 +1,10 @@
 const controller = new ScrollMagic.Controller();
 
+function vw(v) {
+  const w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  return (v * w) / 100;
+}
+
 // Slide hands in when scrolling
 const handsTimeline = new TimelineMax();
 const leftHandTween = TweenMax.to('.hand-left', 1, {left: 0});
@@ -23,15 +28,15 @@ const logoTweenScene = new ScrollMagic.Scene({
   reverse: true,
   triggerElement: '.table',
 })
-.setTween('.logo-container', 1, {scale: 0.7})
+.setTween('.logo-container', 1, {scale: 0.6})
 .addTo(controller);
 
 // Flatten batman out for mobile devices
 const lexLuther = new ScrollMagic.Scene({
   triggerHook: 0,
-  offset: -20,
+  offset: vw(-8),
   reverse: true,
-  triggerElement: '.content',
+  triggerElement: 'h1',
 })
 .setClassToggle('.batman', 'batman-fullwidth')
 .addTo(controller);
