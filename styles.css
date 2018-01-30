@@ -53,7 +53,7 @@ h2 {
 
 .batman {
   height: 8vw;
-  margin-top: -8vw;
+  margin-top: -10.5vw;
   background-color: black;
   position: sticky;
   position: -webkit-sticky;
@@ -68,12 +68,16 @@ h2 {
 
 .logo {
   height: 18vw;
-  margin-top: -18vw;
-  width: 64vw;
+  margin-top: -20vw;
+  width: 60vw;
+}
+
+.l2 {
+  margin-top: -13.5vw;
 }
 
 .logo-container {
-  top: 9.5vw;
+  top: 15vw;
   position: sticky;
   position: -webkit-sticky;
   width: 100%;
@@ -81,6 +85,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .content-container {

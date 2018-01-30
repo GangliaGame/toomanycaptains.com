@@ -29,6 +29,7 @@ const logoTweenScene = new ScrollMagic.Scene({
   triggerElement: '.table',
 })
 .setTween('.logo-container', 1, {scale: 0.6})
+.setTween('.l2', 1, {opacity: 0})
 .addTo(controller);
 
 // Flatten batman out for mobile devices
