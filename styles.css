@@ -7,6 +7,7 @@ body {
 
 p {
   font-size: 18px;
+  margin-top: 10px;
 }
 
 h2 {
@@ -150,7 +151,7 @@ h1::before {
 }
 
 .instructions > section {
-  margin-bottom: 20px;
+  margin-bottom: 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,6 +262,10 @@ h1::before {
   background-color: rgb(38, 161,	208);
 }
 
+.batman-fullwidth {
+  width: 100%;
+}
+
 /* Here be dragons (responsiveness hacks) */
 
 @media (max-width: 900px) and (max-height: 900px) {
@@ -284,9 +289,7 @@ h1::before {
     height: 15vh;
   }
 }
-.batman-fullwidth {
-  width: 100%;
-}
+
 
 @media (max-width: 600px) {
   .batman {
@@ -320,12 +323,31 @@ h1::before {
   .content p {
     font-size: 16px;
   }
-  .content h1 {
+  h1 {
     font-size: 24px;
   }
   h1::before {
     width: 35px;
     height: 35px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .instructions img {
+    width: 15vw;
+    border-radius: 1.5vw;
+  }
+  .instructions-right {
+    align-items: flex-start;
+    margin: 0;
+  }
+  .instructions p {
+    margin-top: 7vw;
+    margin-left: calc(-15vw);
+  }
+  .instructions h2 {
+    margin-top: 5vw;
+    margin-left: 5vw;
   }
 }
 
