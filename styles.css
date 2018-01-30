@@ -48,6 +48,7 @@ h2 {
 .table {
   z-index: 3;
   margin-bottom: -1px;
+  width: 100%;
 }
 
 .batman {

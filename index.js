@@ -24,7 +24,7 @@ const handsScene = new ScrollMagic.Scene({
 const logoTweenScene = new ScrollMagic.Scene({
   triggerHook: 0,
   duration: 150,
-  offset: 0,
+  offset: vw(-5),
   reverse: true,
   triggerElement: '.table',
 })
