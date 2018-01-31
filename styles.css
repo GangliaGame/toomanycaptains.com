@@ -5,6 +5,15 @@ body {
   font-family: 'Exo 2', sans-serif;
 }
 
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+
 p {
   font-size: 18px;
   margin-top: 10px;
@@ -151,13 +160,19 @@ h1::before {
 }
 
 .footer {
-  height: 120px;
+  height: 100px;
   width: 100%;
-  background-color: #222;
+  background-color: #111;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer img {
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .topic {
