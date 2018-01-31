@@ -32,7 +32,7 @@ const logoTweenScene = new ScrollMagic.Scene({
   triggerElement: '.table',
 })
   .setTween('.logo-container', 1, { scale: 0.6 })
-  .setTween('.l2', 1, { opacity: 0 })
+  .setTween('.logo-lower', 1, { opacity: 0 })
   .addTo(controller);
 
 // Expand batman to full width
