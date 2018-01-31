@@ -65,8 +65,8 @@ h2 {
   height: 8vw;
   margin-top: -10.5vw;
   background-color: black;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: -1px;
   z-index: 2;
   transition: width 200ms ease-in-out;
@@ -82,14 +82,14 @@ h2 {
   width: 60vw;
 }
 
-.l2 {
+.logo-lower {
   margin-top: -13.5vw;
 }
 
 .logo-container {
   top: 15vw;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   z-index: 4;
   display: flex;
