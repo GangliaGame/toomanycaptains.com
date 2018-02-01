@@ -13,7 +13,6 @@ a:visited {
   color: white;
 }
 
-
 p {
   font-size: 18px;
   margin-top: 10px;
@@ -212,21 +211,39 @@ h1::before {
   flex-direction: column;
 }
 
-.media-inner {
+.media {
   display: flex;
   flex-wrap: wrap;
 }
 
-.media-inner img {
-  height: calc(12.5vw - 0.5vw);
-  min-height: 100px;
-  margin: 0.5vw;
-  border: 2px solid black;
-}
-
-.media img:hover {
+.media .slider-for img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vh;
+  max-width: calc(85vw - 4px);
   border: 2px solid white;
 }
+
+.media .slider-nav img {
+  width: 150px !important;
+  border: 1px solid white;
+}
+
+.slick-slide {
+  outline: none !important;
+}
+
+.slick-slide:hover {
+  cursor: pointer;
+}
+
+.media .slider-for {
+  margin-bottom: 25px;
+}
+
+/* .media img:hover {
+  border: 2px solid white;
+} */
 
 .viewing-screen img {
   width: 100%;
