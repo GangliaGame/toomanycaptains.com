@@ -5,6 +5,15 @@ body {
   font-family: 'Exo 2', sans-serif;
 }
 
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+
 p {
   font-size: 18px;
   margin-top: 10px;
@@ -31,7 +40,7 @@ h2 {
   background-image: url('./resources/background.svg');
   content: '';
   position: fixed;
-   z-index: -1;
+  z-index: -1;
 }
 
 .players {
@@ -43,6 +52,7 @@ h2 {
 
 .players > img {
   width: 80vw;
+  height: 30vw;
 }
 
 .table {
@@ -55,8 +65,8 @@ h2 {
   height: 8vw;
   margin-top: -10.5vw;
   background-color: black;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: -1px;
   z-index: 2;
   transition: width 200ms ease-in-out;
@@ -72,14 +82,14 @@ h2 {
   width: 60vw;
 }
 
-.l2 {
+.logo-lower {
   margin-top: -13.5vw;
 }
 
 .logo-container {
   top: 15vw;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   z-index: 4;
   display: flex;
@@ -127,7 +137,6 @@ h1::before {
 }
 
 .content p {
-  font-size: 22px;
   line-height: 1.5em;
 }
 
@@ -151,16 +160,22 @@ h1::before {
 }
 
 .footer {
-  height: 120px;
+  height: 100px;
   width: 100%;
-  background-color: #222;
+  background-color: #111;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.instructions > section {
+.footer img {
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.topic {
   margin-bottom: 2vw;
   display: flex;
   align-items: center;
@@ -168,12 +183,12 @@ h1::before {
   align-items: flex-start;
 }
 
-.instructions img {
+.topic img {
   width: 200px;
   border-radius: 10px;
 }
 
-.instructions-right {
+.topic-right {
   margin-left: 25px;
   display: flex;
   align-items: flex-start;
@@ -181,17 +196,15 @@ h1::before {
   flex-direction: column;
 }
 
-.where-to-play-gdc {
+.topic {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.where-to-play-gdc-right {
+.topic-right {
   margin: 0;
   margin-left: 25px;
-}
-
-.where-to-play img {
-  height: 200px;
 }
 
 .media {
@@ -236,7 +249,7 @@ h1::before {
   align-items: center;
   justify-content: center;
   font-family: 'Exo 2', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .mc-field-group > input {
@@ -246,9 +259,10 @@ h1::before {
   border: 0;
 }
 
-.mc-field-group > input, .mc-field-group > input::placeholder {
+.mc-field-group > input,
+.mc-field-group > input::placeholder {
   font-family: 'Exo 2', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   text-indent: 5px;
 }
 
@@ -260,7 +274,7 @@ h1::before {
   background-color: black;
   border-radius: 5px;
   font-family: 'Exo 2', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   margin-left: 10px;
 }
 
@@ -268,7 +282,7 @@ h1::before {
   cursor: pointer;
   height: 40px;
   color: white;
-  background-color: rgb(38, 161,	208);
+  background-color: rgb(38, 161, 208);
 }
 
 /* Responsiveness */
@@ -285,7 +299,6 @@ h1::before {
   }
 }
 
-
 @media (max-width: 600px) {
   #mc_embed_signup_scroll {
     flex-direction: column;
@@ -301,7 +314,7 @@ h1::before {
     margin-top: -25px;
   }
   .content p {
-    font-size: 16px;
+    font-size: 14px;
   }
   h1 {
     font-size: 24px;
@@ -313,19 +326,19 @@ h1::before {
   h2 {
     font-size: 22px;
   }
-  .instructions img {
+  .topic img {
     width: 15vw;
     border-radius: 1.5vw;
   }
-  .instructions-right {
+  .topic-right {
     align-items: flex-start;
     margin: 0;
   }
-  .instructions p {
+  .topic p {
     margin-top: 7vw;
     margin-left: calc(-15vw);
   }
-  .instructions h2 {
+  .topic h2 {
     margin-top: 5vw;
     margin-left: 5vw;
   }
