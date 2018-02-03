@@ -50,8 +50,8 @@ h2 {
 }
 
 .players > img {
-  width: 80vw;
-  height: 30vw;
+  width: 90vw;
+  /* height: 30vw; */
 }
 
 .table {
