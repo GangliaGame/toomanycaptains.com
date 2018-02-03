@@ -14,7 +14,7 @@ a:visited {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
 }
 
@@ -115,7 +115,7 @@ h2 {
   font-weight: 300;
 }
 
-.content h1 {
+h1 {
   margin-top: 5vw;
   font-size: 30px;
   display: flex;
@@ -255,7 +255,7 @@ h1::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
@@ -332,6 +332,7 @@ h1::before {
 /* Responsiveness */
 
 @media (max-width: 900px) and (max-height: 900px) {
+
   .hand {
     display: none;
   }
@@ -385,5 +386,30 @@ h1::before {
   .topic h2 {
     margin-top: 5vw;
     margin-left: 5vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 22px;
+  }
+}
+
+
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 26px;
   }
 }
