@@ -205,6 +205,10 @@ h1::before {
   margin-left: 25px;
 }
 
+.controller img {
+  width: 100%;
+}
+
 .media {
   display: flex;
   flex-direction: column;
@@ -219,7 +223,7 @@ h1::before {
 
 .viewing-screen img {
   width: 100%;
-  /* border: 2px solid white; */
+  border: 1.5px solid white;
 }
 
 .about h2 {
