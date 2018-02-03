@@ -241,18 +241,48 @@ h1::before {
   margin-bottom: 25px;
 }
 
-/* .media img:hover {
-  border: 2px solid white;
-} */
-
 .viewing-screen img {
   width: 100%;
   border: 2px solid white;
 }
 
-.press h2 {
+.about h2 {
   display: inline-block;
   margin-right: 25px;
+}
+
+.about .creators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.about .creators .creator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.about .creators .creator img {
+  margin-bottom: 5px;
+  width: 125px;
+}
+
+.about .creators .creator:first-child img:hover {
+  transform: rotate(-30deg);
+}
+
+.about .creators .creator:last-child img:hover {
+  transform: rotate(30deg);
+}
+
+.about .creators .creator img:hover {
+  transition: transform 150ms ease;
 }
 
 /* Mailchimp newsletter signup */
