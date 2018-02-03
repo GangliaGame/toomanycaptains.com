@@ -219,7 +219,7 @@ h1::before {
 
 .viewing-screen img {
   width: 100%;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .about h2 {
