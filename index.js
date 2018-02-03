@@ -48,8 +48,9 @@ const lexLuther = new ScrollMagic.Scene({
   .addTo(controller);
 
 const flkty = new Flickity('.main-carousel', {
-  cellAlign: 'center',
+  cellAlign: 'left',
   contain: true,
   wrapAround: true,
   autoPlay: true,
+  imagesLoaded: true,
 });
