@@ -271,6 +271,7 @@ h1::before {
 .about .creators .creator img {
   margin-bottom: 5px;
   width: 125px;
+  transition: transform 150ms ease;
 }
 
 .about .creators .creator:first-child img:hover {
@@ -279,10 +280,6 @@ h1::before {
 
 .about .creators .creator:last-child img:hover {
   transform: rotate(30deg);
-}
-
-.about .creators .creator img:hover {
-  transition: transform 150ms ease;
 }
 
 /* Mailchimp newsletter signup */
