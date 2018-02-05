@@ -388,3 +388,8 @@ h1::before {
     font-size: 26px;
   }
 }
+
+.flickity-page-dots .dot {
+  background: white;
+  opacity: 0.4;
+}
