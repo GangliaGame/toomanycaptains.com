@@ -161,7 +161,7 @@ h1::before {
   height: 100px;
   width: 100%;
   background-color: #111;
-  z-index: 20;
+  z-index: 14;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,12 +203,6 @@ h1::before {
 .topic-right {
   margin: 0;
   margin-left: 25px;
-}
-
-.controller video {
-  /* margin-top: -50px; */
-  /* margin-bottom: -200px; */
-  z-index: -10;
 }
 
 .media {
