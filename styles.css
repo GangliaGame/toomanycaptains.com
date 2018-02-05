@@ -363,6 +363,9 @@ h1::before {
     margin-top: 5vw;
     margin-left: 5vw;
   }
+  .where-to-play h1 {
+    margin-top: 12vmin;
+  }
 }
 
 @media (min-width: 1000px) {
