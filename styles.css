@@ -134,6 +134,10 @@ h1::before {
   margin-right: 20px;
 }
 
+h1.stick::before {
+  content: none;
+}
+
 .content p {
   line-height: 1.5em;
 }
