@@ -425,3 +425,8 @@ h1.stick::before {
 .awards .topic {
   justify-content: space-around;
 }
+
+.award-leaves {
+  width: 20vmax !important;
+  margin: 5px;
+}
